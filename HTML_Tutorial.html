@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<style>
+
+    @font-face {
+        font-family: "Segoe UI";
+        src: url("./assets/fonts/");
+        /* src: url("./assets/fonts/segoeuib.ttf");
+        src: url("./assets/fonts/segoeuii.ttf");
+        src: url("./assets/fonts/segoeuil.ttf");
+        src: url("./assets/fonts/segoeuisl.ttf");
+        src: url("./assets/fonts/segoeuiz.ttf");
+        src: url("./assets/fonts/seguibl.ttf");
+        src: url("./assets/fonts/seguibli.ttf");
+        src: url("./assets/fonts/seguili.ttf");
+        src: url("./assets/fonts/seguisb.ttf");
+        src: url("./assets/fonts/seguisbi.ttf");
+        src: url("./assets/fonts/seguisli.ttf"); */
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: 1.4;
+    }
+
+    section {
+        width: 888px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f5f5f5;
+        padding-top: 56px;
+        padding-left: 32px; 
+        padding-right: 24px;
+        padding-bottom: 44px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .h1_div {
+        margin-bottom: 28px;
+
+    }
+
+    h2 {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .main_text {
+        font-size: 16px;
+    }
+
+    dfn {
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    abbr {
+        text-decoration-line: underline;
+        text-decoration-style: dotted;
+        text-underline-offset: 2px;
+    }
+
+    code {
+        color: #902229;
+        background-color: #e7e7e7;
+        font-weight: 500;
+    }
+
+    pre {
+        font-weight: bolder;
+        font-family: Courier, monospace;
+        font-size: 16px;
+        background-color: #e7e7e7;
+        padding-top: 15px;
+        padding-left: 40px;
+        padding-bottom: 10px;
+        margin-bottom: 14px;
+    }
+
+    .tag_content {
+        color: black;
+    }
+
+    .markup_div {
+        margin-bottom: 15px;
+    }
+
+    .tag {
+        color: #5aaeb1;
+        background-color: #dcdcdc;
+        font-size: 12px;
+        font-weight: 500;
+    }
+</style>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+
+        <div class="h1_div">
+        <h1>HTML Tutorial</h1>
+        <hr>
+        </div>
+
+        <div>
+            <h2>What is HTML?</h2>
+            <p class="main_text">
+                <dfn>Hypertext Markup Language (<abbr title="Hypertext Markup Language">HTML</abbr>)</dfn> is the standard markup language for creating web pages and web applications.
+            </p>
+            <br />
+            <p class="main_text">
+                Web browsers receive <abbr title="Hypertext Markup Language">HTML</abbr> documents from a web server or from local storage and render the documents into multimedia web pages. <abbr title="Hypertext Markup Language">HTML</abbr> describes the structure of a web page semantically and originally included cues for the appearance of the document.
+            </p>
+            <br />
+            <p class="main_text">
+                <abbr title="Hypertext Markup Language">HTML</abbr> elements are the building blocks of <abbr title="Hypertext Markup Language">HTML</abbr> pages. With <abbr title="Hypertext Markup Language">HTML</abbr> constructs, images and other objects such as interactive forms may be embedded into the rendered page. <abbr title="Hypertext Markup Language">HTML</abbr> provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. <abbr title="Hypertext Markup Language">HTML</abbr> elements are delineated by tags, written using angle brackets. Tags such as <code>&lt;img /></code> and <code>&lt;input /></code> directly introduce content into the page. Other tags such as <code>&lt;p></code> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the <abbr title="Hypertext Markup Language">HTML</abbr> tags, but use them to interpret the content of the page.
+            </p>
+            <br />
+            <hr>
+            <br /><br />
+        </div>
+
+        <div class="markup_div">
+            <h2>Markup</h2>
+            <p class="main_text">
+                <abbr title="Hypertext Markup Language">HTML</abbr> markup consists of several key components, including those called tags (and their attributes), character-based data types, character references and entity references. <abbr title="Hypertext Markup Language">HTML</abbr> tags most commonly come in pairs like <code>&lt;h1></code> and <code>&lt;/h1></code>, although some represent empty elements and so are unpaired, for example <code>&lt;img></code>. The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening tags and closing tags).
+            </p>
+            <br />  
+            <p class="main_text">
+            Another important component is the <abbr title="Hypertext Markup Language">HTML</abbr> document type declaration, which triggers standards mode rendering.
+            </p>
+            <br />  
+            <p class="main_text">
+            The following is an example of the classic "Hello, World!" program:
+            </p>
+            <br />    
+            <pre><code>&lt;!DOCTYPE html>
+&lt;html>
+    &lt;head>
+        &lt;title><span class="tag_content">This is a title</span>&lt;/title>
+    &lt;/head>
+    &lt;body>
+        &lt;p><span class="tag_content">Hello world!</span>&lt;/p>
+    &lt;/body>
+&lt;/html></code></pre>
+            <hr>
+        </div> 
+
+        <div>
+            <p><b>Tags:</b>
+            <span class="tag">CodingScripting</span>
+            <span class="tag">head</span>
+            <span class="tag">HTML</span>
+            <span class="tag">Introduction to HTML</span>
+            <span class="tag">Landing</span>
+            <span class="tag">Links semantics</span>
+            <span class="tag">Structure</span>
+            <span class="tag">Text</span>
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
+
+
+
